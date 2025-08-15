@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SipUs — Hydration tracking iOS app. Stay hydrated with smart reminders, history tracking, and personalized goals.">
-    <title>SipUs — Stay Hydrated</title>
+    <meta name="description" content="SipUs — Stay hydrated with smart reminders, progress tracking, and local privacy.">
+    <title>SipUs — Stanton Labs</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f9ff;
+            background-color: #f8fafc;
             color: #333;
-            text-align: center;
         }
         header {
             background-color: #4db6ff;
             padding: 2rem 1rem;
+            text-align: center;
             color: white;
         }
         header h1 {
@@ -29,44 +29,66 @@
         }
         main {
             padding: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
         }
-        a.button {
+        img {
+            max-width: 200px;
+            margin-bottom: 1rem;
+        }
+        .button {
             display: inline-block;
             padding: 0.75rem 1.5rem;
-            margin: 0.5rem;
+            margin-top: 1rem;
             background-color: #4db6ff;
             color: white;
             text-decoration: none;
             border-radius: 6px;
             font-weight: bold;
-            transition: background-color 0.2s;
         }
-        a.button:hover {
+        .button:hover {
             background-color: #379fe6;
         }
         footer {
             margin-top: 3rem;
             font-size: 0.9rem;
             color: #777;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #4db6ff;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>SipUs 💧</h1>
-        <p>Stay hydrated with smart reminders and beautiful insights.</p>
+        <p>Stay hydrated with smart reminders and beautiful insights</p>
     </header>
 
     <main>
-        <p><strong>SipUs</strong> is a water tracking iOS app inspired by Mongolian culture and the word "Us" (ус) meaning "water".</p>
-        <p>Track your daily intake, set personalized goals, and view progress over time — all stored securely on your device.</p>
+        <img src="assets/sipus-icon.png" alt="SipUs App Icon">
+        <p><strong>SipUs</strong> — pronounced “sip us,” derived from the Mongolian word "Us" (ус), meaning water — is a comprehensive hydration tracking iOS app built with SwiftUI.</p>
 
-        <a class="button" href="/terms.html">Terms & Conditions</a>
-        <a class="button" href="/privacy.html">Privacy Policy</a>
+        <h2>Features</h2>
+        <ul style="text-align:left; max-width: 700px; margin: 0 auto;">
+            <li>Customizable reminders throughout the day</li>
+            <li>Progress visualization with daily goals</li>
+            <li>One-year+ history tracking with detailed charts</li>
+            <li>All data stored locally — no cloud, no tracking</li>
+            <li>Personalized goals based on weight, climate, and activity</li>
+        </ul>
+
+        <a class="button" href="https://apps.apple.com" target="_blank">View on App Store</a>
     </main>
 
     <footer>
-        &copy; 2025 Andrew Stanton — All rights reserved.
+        &copy; 2025 Stanton Labs — All rights reserved.<br>
+        <a href="/terms.html">Terms & Conditions</a> | 
+        <a href="/privacy.html">Privacy Policy</a>
     </footer>
 </body>
 </html>
