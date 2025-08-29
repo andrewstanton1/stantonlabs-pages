@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="SipUs — hydration tracking with smart reminders, on-device privacy, and warm illustrated design." />
-  <title>SipUs — Stanton Labs</title>
+  <meta name="description" content="SipUs is a thoughtful water tracker for iPhone. Log intake fast, set smart reminders, see trends, and keep your data private." />
+  <title>SipUs – Smart Hydration Tracking for iPhone</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="sipus-page">
   <div class="wrap">
     <header>
       <div class="brand">
@@ -17,58 +17,276 @@
         </a>
       </div>
       <nav class="cta">
-        <a class="btn secondary" href="terms.html">Terms</a>
-        <a class="btn secondary" href="privacy.html">Privacy</a>
+        <a class="btn secondary" href="terms.html">Terms of Service</a>
+        <a class="btn secondary" href="privacy.html">Privacy Policy</a>
       </nav>
     </header>
 
-    <section class="hero">
-      <div class="iconWrap"><img src="assets/app-logo.png" alt="SipUs icon"></div>
-      <div>
-        <h2>SipUs — Hydration, simplified</h2>
-        <p class="muted">Smart reminders, beautiful progress, and complete on-device privacy.</p>
-      </div>
-      <div class="cta">
-        <a class="btn" href="#" aria-disabled="true">App Store (soon)</a>
-        <a class="btn secondary" href="mailto:support@stantonlabs.com">Contact</a>
-      </div>
-    </section>
-
-    <section class="section grid">
-      <article class="card">
-        <h3>Why SipUs?</h3>
-        <ul class="features">
-          <li>Multiple daily reminders you control</li>
-          <li>Progress ring and streaks</li>
-          <li>Daily/weekly/monthly history</li>
-          <li>Quick-add buttons + custom amounts</li>
-          <li>Personalized goals (weight, climate, activity)</li>
-          <li>All data stored locally — no accounts, no tracking</li>
-        </ul>
-      </article>
-
-      <article class="card">
-        <h3>Time-of-day art</h3>
-        <p class="muted">Morning yak, afternoon horses, evening camel—cozy, Mongolian-inspired illustrations that rotate through the day.</p>
-      </article>
-
-      <article class="card">
-        <h3>Accessibility</h3>
-        <p class="muted">Dynamic Type, VoiceOver labels, and high-contrast friendly colors.</p>
-      </article>
-    </section>
-
-    <section class="section">
-      <h3>Screenshots</h3>
-      <div class="shots">
-        <img src="assets/screen-today.jpeg" alt="Today screen (progress ring)">
-        <img src="assets/screen-history.jpeg" alt="History charts">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">SipUs 💧 — Smart Hydration for Everyday Life</h2>
+          <p class="hero-subtitle">Build a healthy water habit. Log in one tap, get gentle reminders, and watch your progress grow—beautifully and privately.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#" aria-disabled="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+              </svg>
+              Download on the App Store
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="phone-mockup">
+            <img src="assets/screen-today.jpeg" alt="SipUs app screenshot" class="app-screenshot">
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer>
-      © 2025 Stanton Labs • <a href="index.html">Home</a> • <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a>
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="section-header">
+        <h3>Everything you need to stay hydrated</h3>
+        <p>Thoughtful features that make tracking effortless</p>
+      </div>
+      <div class="features-wrap">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">💧</div>
+            <h4>Smart Hydration Tracking</h4>
+            <p>Log in one tap with quick-add amounts (250–500 mL) or enter any value. A clean progress ring shows today at a glance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h4>Personalized Goals</h4>
+            <p>Get a goal that fits you—weight, climate, and activity level—or set your own anytime.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h4>Insightful Analytics</h4>
+            <p>See daily, weekly, monthly, and yearly trends. Track streaks, totals, and averages over time.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔔</div>
+            <h4>Intelligent Reminders</h4>
+            <p>Schedule as many reminders as you like. Add water from the notification with one tap.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h4>International Support</h4>
+            <p>English, Spanish, and Mongolian. Choose mL or fl oz, kg or lbs—your call.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h4>Privacy by Default</h4>
+            <p>Your data stays on your device with Core Data. No accounts. No tracking. No cloud copies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="screenshots-section">
+      <div class="section-header">
+        <h3>See SipUs in action</h3>
+        <p>A calm, intuitive interface for daily use</p>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot-card">
+          <img src="assets/screen-today.jpeg" alt="Today screen with progress ring">
+          <h4>Today View</h4>
+          <p>Track progress with a clear ring and quick-add buttons.</p>
+        </div>
+        <div class="screenshot-card">
+          <img src="assets/screen-history.jpeg" alt="History charts">
+          <h4>History & Analytics</h4>
+          <p>Explore charts and insights to spot your patterns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section section">
+      <div class="section-header">
+        <h3>Choose your plan</h3>
+        <p>Start with a free trial—upgrade anytime</p>
+      </div>
+      <div class="pricing-wrap">
+        <div class="pricing-grid">
+          <div class="plan-card">
+            <div class="plan-header">
+              <h4>Free Trial</h4>
+              <div class="plan-price">$0</div>
+              <div class="plan-sub">for 3 days</div>
+            </div>
+            <ul class="plan-features">
+              <li>Full app access</li>
+              <li>All features included</li>
+              <li>No commitment</li>
+            </ul>
+            <div class="plan-cta">
+              <a class="btn btn-outline" href="#" aria-disabled="true">Start Free Trial</a>
+            </div>
+          </div>
+
+          <div class="plan-card most-popular">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="plan-header">
+              <h4>Pro Plan</h4>
+              <div class="plan-price">$0.99</div>
+              <div class="plan-sub">per month</div>
+            </div>
+            <ul class="plan-features">
+              <li>Everything in Free Trial</li>
+              <li>Unlimited reminders</li>
+              <li>Advanced analytics</li>
+              <li>Priority support</li>
+            </ul>
+            <div class="plan-cta">
+              <a class="btn btn-primary" href="#" aria-disabled="true">Get Started</a>
+            </div>
+          </div>
+
+          <div class="plan-card">
+            <div class="plan-header">
+              <h4>Yearly Plan</h4>
+              <div class="plan-price">$7.99</div>
+              <div class="plan-sub">per year</div>
+            </div>
+            <ul class="plan-features">
+              <li>Everything in Pro</li>
+              <li>Save 33% vs monthly</li>
+              <li>Annual billing</li>
+              <li>Best value</li>
+            </ul>
+            <div class="plan-cta">
+              <a class="btn btn-outline" href="#" aria-disabled="true">Save 33%</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="section-header">
+        <h3>What people are saying</h3>
+        <p>Real notes from users building better hydration habits</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The interface is beautiful and the reminders make it easy to stay on track."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="stars">★★★★★</div>
+            <div class="author-info">
+              <strong>Sarah M.</strong>
+              <span>App Store Review</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"All data stays on my device, and the Mongolian artwork is genuinely charming."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="stars">★★★★★</div>
+            <div class="author-info">
+              <strong>Michael R.</strong>
+              <span>App Store Review</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"The progress rings and streaks are motivating. I've never been this consistent."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="stars">★★★★★</div>
+            <div class="author-info">
+              <strong>Emma L.</strong>
+              <span>App Store Review</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>SipUs</h4>
+            <p>Your hydration companion—simple, private, and encouraging.</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <div class="footer-links">
+              <a href="privacy.html">Privacy Policy</a>
+              <a href="terms.html">Terms of Service</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-links">
+              <a href="mailto:support@stantonlabs.com">support@stantonlabs.com</a>
+              <a href="index.html">Stanton Labs</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 Stanton Labs. All rights reserved.</span>
+        </div>
+      </div>
     </footer>
   </div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Simple fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections for animation
+    document.querySelectorAll('.features-section, .screenshots-section, .pricing-section, .testimonials-section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>

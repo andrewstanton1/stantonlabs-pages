@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Stanton Labs — independent mobile apps with a human touch." />
-  <title>Stanton Labs</title>
+  <meta name="description" content="Stanton Labs — Independent mobile apps with a human touch. Thoughtful design, strong privacy defaults, and warm illustrated style." />
+  <title>Stanton Labs — Independent Mobile Apps</title>
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -12,7 +12,6 @@
   <div class="wrap">
     <header>
       <div class="brand">
-        <img src="assets/app-logo.png" alt="Stanton Labs logo" />
         <h1>Stanton Labs</h1>
       </div>
       <nav class="cta">
@@ -21,38 +20,218 @@
       </nav>
     </header>
 
-    <div class="hero">
-      <div class="drop" aria-hidden="true"></div>
-      <div>
-        <h2>Independent mobile apps with a human touch</h2>
-        <p>Thoughtful design, strong privacy defaults, and a warm illustrated style.</p>
-      </div>
-      <div class="cta">
-        <a class="btn" href="sipus.html">View SipUs</a>
-        <a class="btn secondary" href="mailto:support@stantonlabs.com">Contact</a>
-      </div>
-    </div>
-
-    <div class="section-title">Apps</div>
-    <section class="grid">
-      <!-- SipUs card -->
-      <article class="card">
-        <span class="pill">iOS</span>
-        <div class="icon">
-          <img src="assets/app-logo.png" alt="SipUs icon" style="width:48px;height:48px;border-radius:10px;">
+    <!-- Hero Section -->
+    <section class="company-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">Independent mobile apps with a human touch</h2>
+          <p class="hero-subtitle">Thoughtful design, strong privacy defaults, and a warm illustrated style that puts people first.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#our-apps">Explore Our Apps</a>
+          </div>
         </div>
-        <h3>SipUs</h3>
-        <p>Hydration tracking with smart reminders, year-long history, and on-device privacy.</p>
-        <div class="actions">
-          <a class="btn" href="sipus.html">Learn More</a>
-          <a class="link" href="#">App Store (soon)</a>
+        <div class="hero-visual">
+          <div class="app-showcase">
+            <!-- Minimalist floating water effect -->
+            <div class="floating-icon">
+              <img src="assets/app-logo.png" alt="SipUs app icon" class="app-icon"/>
+              <div class="water-reflection" aria-hidden="true"></div>
+              <div class="ripple-effect" aria-hidden="true">
+                <div class="ripple-ring"></div>
+                <div class="ripple-ring"></div>
+                <div class="ripple-ring"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </article>
+      </div>
     </section>
 
-    <footer>
-      © 2025 Stanton Labs • <a href="terms.html">Terms</a> • <a href="privacy.html">Privacy</a>
+    <!-- Values Section -->
+    <section class="values-section">
+      <div class="section-header">
+        <h3>What we believe in</h3>
+        <p>Our approach to building apps that matter</p>
+      </div>
+      <div class="values-wrap">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">🎨</div>
+            <h4>Thoughtful Design</h4>
+            <p>Every pixel and interaction is crafted with care. We believe beautiful design should be accessible to everyone.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🔒</div>
+            <h4>Privacy First</h4>
+            <p>Your data belongs to you. We build with strong privacy defaults and on-device processing whenever possible.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h4>Human Touch</h4>
+            <p>Warm illustrations, thoughtful copy, and features that feel like they were made by someone who cares.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps Section -->
+    <section id="our-apps" class="apps-section">
+      <div class="section-header">
+        <h3>Our Apps</h3>
+        <p>Carefully crafted experiences for everyday life</p>
+      </div>
+      <div class="apps-grid">
+        <div class="app-card featured">
+          <div class="app-header">
+            <div class="app-icon">
+              <img src="assets/app-logo.png" alt="SipUs icon">
+            </div>
+            <div class="app-badge">Latest</div>
+          </div>
+          <div class="app-content">
+            <h4>SipUs</h4>
+            <p class="app-tagline">Your hydration companion</p>
+            <p class="app-description">Stay hydrated with intelligent reminders, track your progress over time, and build healthy drinking habits with personalized AI-powered recommendations. Features comprehensive analytics, multi-language support, and complete privacy with local data storage.</p>
+            <div class="app-features">
+              <span class="feature-tag">iOS</span>
+              <span class="feature-tag">Privacy</span>
+              <span class="feature-tag">Health</span>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="btn btn-primary" href="sipus.html">Learn More</a>
+            <a class="btn btn-outline" href="#" aria-disabled="true">App Store (Soon)</a>
+          </div>
+        </div>
+        
+        <div class="app-card coming-soon">
+          <div class="app-header">
+            <div class="app-icon placeholder">
+              <div class="placeholder-icon">🚀</div>
+            </div>
+            <div class="app-badge">Coming Soon</div>
+          </div>
+          <div class="app-content">
+            <h4>More Apps</h4>
+            <p class="app-tagline">Something new is brewing</p>
+            <p class="app-description">We're working on more thoughtful apps that put people first. Stay tuned for updates.</p>
+            <div class="app-features">
+              <span class="feature-tag">iOS</span>
+              <span class="feature-tag">Privacy</span>
+              <span class="feature-tag">Design</span>
+            </div>
+          </div>
+          <div class="app-actions">
+            <a class="btn btn-outline" href="mailto:support@stantonlabs.com">Get Notified</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+      <div class="about-grid">
+        <div>
+          <h2>About Stanton Labs</h2>
+          <p class="lead">
+            We're a small, independent studio focused on creating mobile apps that make a difference.
+            Our apps are built with care, designed for privacy, and crafted to bring joy to everyday tasks.
+          </p>
+          <p class="lead">
+            Every app we build reflects our values: thoughtful design, strong privacy defaults,
+            and a human touch that makes technology feel more personal.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat-pill">
+            <div class="value">100%</div>
+            <div class="label">Privacy Focused</div>
+          </div>
+          <div class="stat-pill">
+            <div class="value">∞</div>
+            <div class="label">Care & Attention</div>
+          </div>
+          <div class="stat-pill">
+            <div class="value">1</div>
+            <div class="label">Small Team</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>Stanton Labs</h4>
+            <p>Independent mobile apps with a human touch.</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Apps</h4>
+            <a href="sipus.html">SipUs</a>
+            <!-- add more apps here later -->
+          </div>
+
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <a href="mailto:support@stantonlabs.com">support@stantonlabs.com</a>
+            <a href="https://stantonlabs.com">Stanton Labs</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2025 Stanton Labs. All rights reserved.</span>
+        </div>
+      </div>
     </footer>
   </div>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+          });
+        }
+      });
+    });
+
+    // Simple fade-in animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe sections
+    document.querySelectorAll('.values-section, .apps-section, .about-section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(20px)';
+      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
