@@ -39,9 +39,13 @@
         </div>
         <div class="hero-image">
           <div class="phone-mockup">
-            <video src="assets/sipus.mp4" alt="SipUs app demo" class="app-screenshot" autoplay muted loop playsinline>
+            <video id="demo-video" src="assets/sipus.mp4" class="app-screenshot" muted playsinline autoplay loop preload="auto">
           <img src="assets/today.png" alt="SipUs app screenshot" class="app-screenshot">
         </video>
+        <div id="video-loading" class="video-loading" style="display: none;">
+          <div class="loading-droplet"></div>
+          <div class="loading-text">Loading demo...</div>
+        </div>
           </div>
         </div>
       </div>
@@ -289,6 +293,5 @@
       section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
       observer.observe(section);
     });
-  </script>
-</body>
-</html>
+    
+    // Video loading animation - bulletproof version
