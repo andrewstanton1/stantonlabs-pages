@@ -91,7 +91,7 @@
           <div class="app-content">
             <h4>SipUs</h4>
             <p class="app-tagline">Your hydration companion</p>
-            <p class="app-description">Stay hydrated with intelligent reminders, track your progress over time, and build healthy drinking habits with personalized AI-powered recommendations. Features comprehensive analytics, multi-language support, and complete privacy with local data storage.</p>
+            <p class="app-description">Stay hydrated with intelligent reminders, track your progress over time, and build healthy drinking habits with personalized recommendations. Features comprehensive analytics, multi-language support, and complete privacy with local data storage.</p>
             <div class="app-features">
               <span class="feature-tag">iOS</span>
               <span class="feature-tag">Privacy</span>
@@ -202,10 +202,22 @@
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'center'
-          });
+          // Get the target's position
+          const targetPosition = target.offsetTop;
+          
+          if (window.innerWidth <= 768) {
+            // For mobile, scroll to the very top of the section
+            window.scrollTo({
+              top: targetPosition + 60, // Positive offset to scroll down more
+              behavior: 'smooth'
+            });
+          } else {
+            // For desktop, scroll to the very top of the section
+            window.scrollTo({
+              top: targetPosition + 100, // Positive offset to scroll down more
+              behavior: 'smooth'
+            });
+          }
         }
       });
     });

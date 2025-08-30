@@ -642,16 +642,17 @@
   @media (max-width:768px) {
     .hero-content {
       grid-template-columns:1fr;
-      gap:60px;
+      gap:40px;
       text-align:center;
     }
     
     .hero-title {
-      font-size:2.5rem;
+      font-size:2.2rem;
     }
     
     .hero-subtitle {
-      font-size:1.1rem;
+      font-size:1rem;
+      padding:0 20px;
     }
     
     .hero-cta {
@@ -660,12 +661,17 @@
     }
     
     .phone-mockup {
-      width:240px;
-      height:480px;
+      width:220px;
+      margin:0 auto;
     }
     
     .section-header h3 {
-      font-size:2rem;
+      font-size:1.8rem;
+    }
+    
+    .section-header p {
+      font-size:1rem;
+      padding:0 20px;
     }
     
     .features-grid,
@@ -673,6 +679,26 @@
     .pricing-grid,
     .testimonials-grid {
       grid-template-columns:1fr;
+      gap:24px;
+      padding:0 20px;
+    }
+    
+    .screenshots-grid {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .pricing-scroll {
+      padding:20px 0;
+    }
+    
+    .pricing-cards {
+      padding:0 20px;
+    }
+    
+    .pricing-card {
+      min-width:260px;
+      padding:32px 24px;
     }
     
     .pricing-card.featured,
@@ -682,7 +708,25 @@
     
     .pricing-card.featured:hover,
     .pricing-card.selected:hover {
-      transform:translateY(-8px);
+      transform:translateY(-4px);
+    }
+    
+    .screenshot-card img {
+      height:280px;
+    }
+    
+    .feature-card {
+      padding:28px 20px;
+    }
+    
+    .feature-card h4 {
+      font-size:1.2rem;
+      padding:0 8px;
+    }
+    
+    .feature-card p {
+      padding:0 10px;
+      font-size:0.95rem;
     }
     
     .footer-content {
@@ -694,50 +738,113 @@
     .footer-section {
       min-width:auto;
     }
+    
+    /* Header navigation mobile fixes */
+    header {
+      padding: 16px 20px;
+    }
+    
+    .brand h1 {
+      font-size: 1.4rem;
+    }
+    
+    .cta {
+      gap: 12px;
+    }
+    
+    .cta .btn {
+      padding: 8px 12px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
   }
   
   @media (max-width:480px) {
     .wrap {
-      padding:20px;
+      padding:16px;
     }
     
     .hero-section {
-      padding:80px 0;
+      padding:60px 0;
     }
     
     .features-section,
     .screenshots-section,
     .pricing-section,
     .testimonials-section {
-      padding:80px 0;
+      padding:60px 0;
     }
     
     .hero-title {
-      font-size:2rem;
-    }
-    
-    .section-header h3 {
       font-size:1.8rem;
     }
     
+    .hero-subtitle {
+      font-size:0.95rem;
+      padding:0 16px;
+    }
+    
+    .section-header h3 {
+      font-size:1.6rem;
+    }
+    
+    .section-header p {
+      font-size:0.95rem;
+      padding:0 16px;
+    }
+    
     .phone-mockup {
-      width:200px;
-      height:400px;
+      width:180px;
     }
     
     .feature-card {
-      padding:32px 20px;
+      padding:24px 16px;
     }
     
     .feature-card h4 {
-      padding:0 10px;
+      font-size:1.1rem;
+      padding:0 6px;
     }
     
     .feature-card p {
-      padding:0 12px;
+      padding:0 8px;
+      font-size:0.9rem;
     }
     
-    .pricing-card,
+    .screenshot-card img {
+      height:240px;
+    }
+    
+    .screenshots-grid {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    
+    .pricing-card {
+      min-width:240px;
+      padding:24px 20px;
+    }
+    
+    /* Even more compact header for small mobile */
+    header {
+      padding: 12px 16px;
+    }
+    
+    .brand h1 {
+      font-size: 1.2rem;
+    }
+    
+    .cta {
+      gap: 8px;
+    }
+    
+    .cta .btn {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+  }
+    
     .testimonial-card,
     .value-card,
     .app-card {
@@ -849,7 +956,8 @@
   
   /* Values Section */
   .values-section {
-    padding:100px 0;
+    padding:50px 0 100px;
+    margin-top: 50px;
     background:linear-gradient(135deg, rgba(102,126,234,.05) 0%, rgba(118,75,162,.05) 100%);
   }
   
@@ -1641,7 +1749,17 @@
   }
   @media (max-width: 640px) {
     .footer-bottom { flex-direction: column; align-items: flex-start; }
-    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stats { grid-template-columns: repeat(3, 1fr); }
+    .stat-pill {
+      padding: 16px 12px;
+      height: 90px;
+    }
+    .stat-pill .value {
+      font-size: 20px;
+    }
+    .stat-pill .label {
+      font-size: 11px;
+    }
   }
 
   /* ===== Minimalist floating water effect ===== */
