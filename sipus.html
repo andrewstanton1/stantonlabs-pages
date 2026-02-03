@@ -29,7 +29,7 @@
           <h2 class="hero-title">SipUs 💧 — Smart Hydration for Everyday Life</h2>
           <p class="hero-subtitle">Build a healthy water habit. Log in one tap, get gentle reminders, and watch your progress grow—beautifully and privately.</p>
           <div class="hero-cta">
-            <a class="btn btn-primary" href="#" aria-disabled="true">
+            <a class="btn btn-primary" href="https://apps.apple.com/app/id6755955244" onclick="openAppStore('6755955244'); return false;" target="_blank" rel="noopener">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;">
                 <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
               </svg>
@@ -133,7 +133,7 @@
               <li>No commitment</li>
             </ul>
             <div class="plan-cta">
-              <a class="btn btn-outline" href="#" aria-disabled="true">Start Free Trial</a>
+              <a class="btn btn-outline" href="https://apps.apple.com/app/id6755955244" onclick="openAppStore('6755955244'); return false;" target="_blank" rel="noopener">Start Free Trial</a>
             </div>
           </div>
 
@@ -151,7 +151,7 @@
               <li>Priority support</li>
             </ul>
             <div class="plan-cta">
-              <a class="btn btn-primary" href="#" aria-disabled="true">Get Started</a>
+              <a class="btn btn-primary" href="https://apps.apple.com/app/id6755955244" onclick="openAppStore('6755955244'); return false;" target="_blank" rel="noopener">Get Started</a>
             </div>
           </div>
 
@@ -168,7 +168,7 @@
               <li>Best value</li>
             </ul>
             <div class="plan-cta">
-              <a class="btn btn-outline" href="#" aria-disabled="true">Save 33%</a>
+              <a class="btn btn-outline" href="https://apps.apple.com/app/id6755955244" onclick="openAppStore('6755955244'); return false;" target="_blank" rel="noopener">Save 33%</a>
             </div>
           </div>
         </div>
@@ -295,3 +295,27 @@
     });
     
     // Video loading animation - bulletproof version
+    const demoVideo = document.getElementById('demo-video');
+    const videoLoading = document.getElementById('video-loading');
+    if (demoVideo) {
+      demoVideo.addEventListener('loadeddata', () => { if (videoLoading) videoLoading.style.display = 'none'; });
+      demoVideo.addEventListener('waiting', () => { if (videoLoading) videoLoading.style.display = 'block'; });
+      demoVideo.addEventListener('playing', () => { if (videoLoading) videoLoading.style.display = 'none'; });
+    }
+
+    // Open App Store helper: try the itms-apps scheme first, then fall back to HTTPS
+    function openAppStore(appId) {
+      var itms = 'itms-apps://apps.apple.com/app/id' + appId;
+      var https = 'https://apps.apple.com/app/id' + appId;
+      var now = Date.now();
+      // Attempt direct App Store open
+      window.location = itms;
+      // If the scheme fails (e.g., desktop browser or blocked), fall back to HTTPS
+      setTimeout(function() {
+        if (Date.now() - now < 1500) window.location = https;
+      }, 800);
+    }
+
+  </script>
+</body>
+</html>
